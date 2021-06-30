@@ -1,0 +1,55 @@
+.perifericos{padding-top: $separacion;}
+
+.formulario-agregar-periferico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include desktop{
+        align-items: initial;
+        @include grid(3, $separacion /3);
+        .btn-principal{ 
+            grid-column: 2 / 3;
+            margin: 0 auto;
+        }
+    }
+}
+.perifericos{
+    padding: $separacion 0 $separacion 0;
+}
+
+.eliminar-actualizar-periferico{
+    padding-bottom: $separacion;
+    @include desktop{
+       display: grid;
+       grid-template-columns: 30% 70%;
+       padding-left: $separacion / 3;
+    }
+}
+.eliminar-periferico-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.actualizar-periferico-form{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    @include desktop{
+        @include grid(2, $separacion / 3);
+        align-items: center;
+        justify-content: center;
+        .btn-principal{
+            width: 25rem;
+            margin: 0 auto;
+        }
+    }
+}
+.actualizar-periferico{
+    margin-top: 2rem;
+    @include desktop{
+        margin-top: 0;
+    }
+}

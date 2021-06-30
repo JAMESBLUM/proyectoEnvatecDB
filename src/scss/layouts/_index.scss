@@ -1,0 +1,64 @@
+.backgroundIndex-img{
+    background-image: url(../img/indexBackground-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center center;
+}
+
+.loginIndex{
+    background-color: rgba(255,255,255, .9);
+    margin: 14rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    img{width: 20rem;}
+    width: 30rem;
+    @include tablet{width: 35rem;}
+    -webkit-box-shadow: 7px 7px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.loginIdex-formulario{
+    padding: $separacion / 3 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.campo-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        border: none;
+        padding: .5rem;
+        border-radius: .5rem;
+        background-color: $gris;
+        margin-bottom: $separacion / 2;
+    }
+}
+.btn-ingresar{
+    border: none;
+    border-radius: 1rem;
+    background-color: $azulOscuro;
+    color: $blanco;
+    font-weight: $bold;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top:1.5rem;
+    &:hover{background-color: $naranja; color: $negro;}
+}
+.error{
+    color: red;
+}
+.crearUsuario-enlace{
+    color: $verde;
+    font-weight: $bold;
+    &:hover{
+        color:$naranja;
+    }
+    margin-top: 1rem;
+}

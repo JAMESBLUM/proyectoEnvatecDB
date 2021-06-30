@@ -1,0 +1,16 @@
+@import 'base/normalize';
+
+/*================================== FUENTES ==================================*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+//=======================================
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/utilidades';
+
+
+//========================== LAYOUTS ==========================
+@import 'layouts/index';
+@import 'layouts/envatecHome';
+@import 'layouts/perifericos';

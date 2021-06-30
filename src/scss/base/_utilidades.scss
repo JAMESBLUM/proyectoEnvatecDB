@@ -1,0 +1,58 @@
+.centrar-texto{ text-align: center;}
+.font-AzulOscuro{color: $azulOscuro;}
+.font-Verde{color:$verde;}
+.font-Naranja{color: $naranja;}
+.legend{font-weight: $bold; text-transform: uppercase;}
+
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    input,textarea,select{
+        background-color: $gris;
+        width: 30rem;
+        border: none;
+        border-radius: .5rem;
+    }
+   
+}
+
+.btn-principal{
+    background-color: $azulOscuro;
+    color: $blanco;
+    font-weight: $bold;
+    border: none;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 20rem;
+    cursor: pointer;
+    &:hover{background-color: $verde; color: $negro;}
+}
+
+/*============= TABLA VISUALIZAR ELEMENTOS =============*/
+.tabla-MostrarDatos{
+    width: 100%;
+    background-color: $gris;
+    border-radius: 1rem;
+    -webkit-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    1px 1px 12px 0px rgba(50, 50, 50, 1);
+    box-shadow:         1px 1px 12px 0px rgba(50, 50, 50, 1);
+    thead{width: 100%; color: $naranja;}
+    tbody{
+        td{
+            padding:$separacion / 4;
+            border-bottom: solid 3px black;
+        }
+        tr{
+            &:last-of-type{
+                td{border-bottom: none;}
+            }
+        }
+    }
+    .titulos-column{font-weight: $bold;}
+
+}
+/*============= ELIMINAR ELEMENTOS =============*/
